@@ -8,9 +8,6 @@
         <!-- provedor/implementacao do JPA -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <!-- entidade mapeada -->
-        <class>com.felipe.loja.beans.****</class>
-
         <properties>
             <!-- dados da conexao -->
             <property name="javax.persistence.jdbc.driver" 
@@ -30,8 +27,11 @@
 
             <!--  atualiza o banco, gera as tabelas se for preciso -->
             <property name="hibernate.hbm2ddl.auto" value="update" />
-        
+
+            <!-- entidade mapeada -->
+            <class>com.felipe.loja.beans.****</class>
+            
         </properties>  
-        
+
     </persistence-unit>
 </persistence>
